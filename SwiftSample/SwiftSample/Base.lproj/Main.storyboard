@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GT-America-Mono-Regular.otf">
+            <string>GTAmericaMono-Regular</string>
+        </array>
+        <array key="GT-America-Standard-Regular.otf">
+            <string>GTAmerica-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController title="Home" id="9pv-A4-QxB" customClass="HomeViewController" customModule="SwiftSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFit" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="airshipMark" translatesAutoresizingMaskIntoConstraints="NO" id="He6-LA-1je" userLabel="airshipMark">
+                                <rect key="frame" x="45" y="28" width="285" height="430"/>
+                                <accessibility key="accessibilityConfiguration" identifier="airshipMark"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZm-tj-QRc" userLabel="channelIdButton">
+                                <rect key="frame" x="0.0" y="466" width="375" height="72"/>
+                                <accessibility key="accessibilityConfiguration" identifier="channelIdButton"/>
+                                <fontDescription key="fontDescription" name="GTAmericaMono-Regular" family="GT America Mono" pointSize="12"/>
+                                <state key="normal" title="00000000-aaaa-1111-bbbb-222222222222">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="TqZ-yX-cii"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCg-eu-blq" userLabel="enablePushButton">
+                                <rect key="frame" x="64" y="472" width="247" height="60"/>
+                                <accessibility key="accessibilityConfiguration" identifier="enablePushButton"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Lzm-Ff-eFQ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="247" id="olK-2Q-erH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GTAmerica-Regular" family="GT America" pointSize="36"/>
+                                <state key="normal" title="Enable Push">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Pcx-co-GZe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="He6-LA-1je" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="29" id="1EW-w2-ROQ"/>
+                            <constraint firstItem="iZm-tj-QRc" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="2B5-pp-G8Y"/>
+                            <constraint firstAttribute="trailing" secondItem="iZm-tj-QRc" secondAttribute="trailing" id="72P-nD-oZz"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="iZm-tj-QRc" secondAttribute="bottom" constant="80" id="ACe-2q-grX"/>
+                            <constraint firstItem="iZm-tj-QRc" firstAttribute="top" secondItem="He6-LA-1je" secondAttribute="bottom" constant="8" symbolic="YES" id="Ebu-BA-oAv"/>
+                            <constraint firstItem="UCg-eu-blq" firstAttribute="top" secondItem="He6-LA-1je" secondAttribute="bottom" constant="14" id="HuO-u1-gvx"/>
+                            <constraint firstItem="iZm-tj-QRc" firstAttribute="centerY" secondItem="UCg-eu-blq" secondAttribute="centerY" id="O9c-hB-hdL"/>
+                            <constraint firstItem="He6-LA-1je" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" symbolic="YES" id="iUm-ke-wO4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="He6-LA-1je" secondAttribute="trailing" constant="29" id="p8g-LQ-eq7"/>
+                            <constraint firstItem="UCg-eu-blq" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="pVU-2B-B55"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Airship" image="Homescreen" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="channelIDButton" destination="iZm-tj-QRc" id="3qP-bJ-Xqd"/>
+                        <outlet property="enablePushButton" destination="UCg-eu-blq" id="4Tu-5f-4vT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1414" y="-367"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="gZ5-Hw-Q4m" kind="relationship" relationship="viewControllers" id="fKM-5c-GxI"/>
+                        <segue destination="JRz-Sl-iGG" kind="relationship" relationship="viewControllers" id="1d0-qY-NRu"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="175" y="342"/>
+        </scene>
+        <!--Message Center-->
+        <scene sceneID="NvI-WN-tRz">
+            <objects>
+                <viewController title="Message Center" id="gZ5-Hw-Q4m" customClass="MessageCenterViewController" customModule="SwiftSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Message Center" image="Inbox" id="bOP-nI-w2f"/>
+                    <navigationItem key="navigationItem" id="3Bi-uC-yfA"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m6B-S2-ZqU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1413" y="342"/>
+        </scene>
+        <!--Debug-->
+        <scene sceneID="tG2-Gv-bE1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JRz-Sl-iGG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Debug" image="outline_bug_report_black_36pt" id="WBy-UI-qSz"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="vX8-Md-Jzb">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CMJ-gn-hPv" kind="relationship" relationship="rootViewController" id="zk8-e3-Tl3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tc8-n2-cb3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1414" y="1178"/>
+        </scene>
+        <!--DebugKit-->
+        <scene sceneID="nzC-Xk-r3b">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DebugKit" bundleIdentifier="com.urbanairship.AirshipDebugKit" id="CMJ-gn-hPv" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="1iM-Wu-64s"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nMj-BN-7lu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2002" y="1178"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Homescreen" width="24" height="24"/>
+        <image name="Inbox" width="24" height="24"/>
+        <image name="airshipMark" width="512.5" height="348.5"/>
+        <image name="outline_bug_report_black_36pt" width="36" height="36"/>
+    </resources>
+</document>
