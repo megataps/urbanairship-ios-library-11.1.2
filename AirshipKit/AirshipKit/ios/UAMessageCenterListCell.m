@@ -14,7 +14,8 @@
 }
 
 - (void)setStyle:(UAMessageCenterStyle *)style {
-    _style = style;
+//    _style = style;
+    self.style = style;
 
     BOOL hidden = !style.iconsEnabled;
     self.listIconView.hidden = hidden;

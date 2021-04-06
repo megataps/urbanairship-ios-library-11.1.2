@@ -220,7 +220,8 @@
 }
 
 - (void)setStyle:(UAMessageCenterStyle *)style {
-    _style = style;
+//    _style = style;
+    self.style = style;
     
     [self applyStyle];
 }
